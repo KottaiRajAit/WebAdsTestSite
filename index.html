@@ -5,28 +5,56 @@
     <meta charset="" />
     <title>TEST WEBSITE!..</title>
     <link rel="stylesheet" type="text/css" href="https://dambovitamall.ro/wp-content/themes/dambovita/style.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
+    <link rel="canonical" href="https://dambovitamall.ro/" />
 
-    <!-- FFR -->
+  <script
+        src="http://localhost:3013/web-advertising-slider/6412ea965d2720655c77f373/web_advertising_slider/script.js"></script>
 
-<!--     <script
-        src="https://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js"></script> -->
-<script async src="./ffr-track.js"></script>
-<!-- <script src="https://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js"></script> -->
-    <script src="https://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js"></script>
- 
-
-     <link rel="stylesheet" id="bcc_bootstrap-css"
+    <style type="text/css"></style>
+    <link rel="stylesheet" id="bcc_bootstrap-css"
         href="https://dambovitamall.ro/wp-content/plugins/bootstraps-columns-controller/css/bootstrap.min.css?ver=6.3.2"
         media="all" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./script.js"></script>
 
 </head>
 
-<body data-cmplz="1"
-    class="home page-template page-template-home page-template-home-php page page-id-47 dambovita acasa cmplz-functional cmplz-eu cmplz-optin"
-    style="overflow: auto">
+
+
+
+<body>
+
+    <style>
+        .billboard-970x250 {
+            width: 1200px;
+            height: 480px;
+            position: relative;
+            margin: 60px auto 30px auto;
+            display: block;
+            background-color: gray;
+        }
+
+        .billboard-320x150 {
+            width: 350px;
+            height: 150px;
+            display: block;
+            background-color: gray;
+            margin-top: 100px;
+            position: relative;
+        }
+    </style>
 
     <header class="header clear" role="banner">
         <div class="mobile_menu">
+            <a class="close-menu" href="#"><img
+                    src="https://dambovitamall.ro/wp-content/themes/dambovita/img/icon-close.png" /></a>
+            <a href="#" class="menu_logo">
+                <img src="https://dambovitamall.ro/wp-content/themes/dambovita/img/logo.jpg" alt="Logo"
+                    class="logo-img" />
+            </a>
+
             <ul>
                 <li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65">
                     <a href="#">Magazine</a>
@@ -47,9 +75,9 @@
             <button class="contact-btn">Contactați-ne</button>
             <div class="col-md-12 social">
                 <a href="#" target="_blank"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" /></a>
+                        src="https://dambovitamall.ro/wp-content/themes/dambovita/img/facebook.png" /></a>
                 <a href="#" target="_blank"><img
-                        src="https://freelogopng.com/images/all_img/1658586823instagram-logo-transparent.png" /></a>
+                        src="https://dambovitamall.ro/wp-content/themes/dambovita/img/instagram.png" /></a>
             </div>
             <a class="btn-menu" href="#"><i class="fas fa-map-marker-alt"></i>Vino la noi</a>
         </div>
@@ -57,11 +85,12 @@
             <div class="container">
                 <div class="header-inside">
                     <div class="logo col-xs-3 col-md-3">
-                        <a href="#" style="margin-top: -35px; padding: 10px;">
-                            <img src="https://media.istockphoto.com/id/625379448/photo/golden-lotus-flower-3d-render-illustration.jpg?s=612x612&w=0&k=20&c=fcIHAFGN3ycHrtPUrZ8jKBoST8Wk1AKhoS9jJICiVNg="
-                                height="auto" alt="Logo" class="logo-img" />
+                        <a href="#">
+                            <img src="https://dambovitamall.ro/wp-content/themes/dambovita/img/logo.jpg" alt="Logo"
+                                class="logo-img" />
                         </a>
                     </div>
+                    <!-- /logo -->
                     <nav class="nav col-md-6 col-xs-6" role="navigation">
                         <ul>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65">
@@ -84,188 +113,66 @@
                     <div class="header-contact col-xs-3 col-md-3">
                         <a class="contact-btn">Contactează-ne</a>
                     </div>
+                    <!-- .header-buttons -->
                 </div>
                 <div class="header-inside_2">
+                    <!-- <div class="blur"></div> -->
                     <a href="#">
-                        <img src="https://media.istockphoto.com/id/1056915250/photo/gold-lotus-flower-background-3d-render-illustration.jpg?s=2048x2048&w=is&k=20&c=SAcjXqNy1PnWaE6OBwfBg1SISSbEZ4a2K6NKqWwGHH4="
-                            alt="Logo" class="logo-img" />
+                        <img src="https://dambovitamall.ro/wp-content/themes/dambovita/img/logo.jpg" alt="Logo"
+                            class="logo-img" />
                     </a>
                     <div class="mobile-fixed">
                         <a class="menu_button"><i class="fas fa-bars"></i></a>
                     </div>
                     <div class="search_header">
+                        <!-- search -->
                         <form autocomplete="off" class="search col-md-offset-3 col-md-9" method="get" action="#"
                             role="search">
+                            <!-- <button class="search-submit" type="submit" role="button"><i class="fas fa-search" ></i></button> -->
                             <input class="search-input" type="search" autocomplete="off" name="s" maxlength="16"
                                 placeholder="Caută un magazin sau un restaurant" />
                         </form>
+                        <!-- /search -->
                     </div>
                 </div>
+                <!-- .header-inside_2 -->
             </div>
         </div>
     </header>
 
-    <main>
-        <div class="play-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff"
-                version="1.1" id="Capa_1" width="45px" height="45px" viewBox="0 0 390 390" xml:space="preserve">
-                <g>
-                    <g>
-                        <path
-                            d="M195,0C87.303,0,0,87.303,0,195c0,107.697,87.303,195,195,195c107.697,0,195-87.303,195-195C390,87.303,302.697,0,195,0z     M253.871,211.921l-66.328,66.326c-4.578,4.577-10.702,7.011-16.927,7.011c-3.085,0-6.189-0.594-9.152-1.82    c-8.94-3.704-14.774-12.431-14.774-22.106V128.669c0-9.676,5.834-18.403,14.774-22.108c8.94-3.701,19.23-1.654,26.079,5.191    l66.328,66.328C263.215,187.424,263.215,202.576,253.871,211.921z" />
-                    </g>
-                </g>
-            </svg>
-        </div>
-
-        <div class="pause-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="45px"
-                width="45px" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve">
-                <style type="text/css">
-                    .st0 {
-                        fill: #ffffff;
-                    }
-                </style>
-                <g>
-                    <path class="st0"
-                        d="M256,0C114.625,0,0,114.625,0,256c0,141.374,114.625,256,256,256s256-114.626,256-256   C512,114.625,397.375,0,256,0z M224,336h-64V176h64V336z M352,336h-64V176h64V336z" />
-                </g>
-            </svg>
-        </div>
-
-        <div class="prev-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" fill="none"
-                transform="rotate(180)">
-                <g id="SVGRepo_bgCarrier" stroke-width="0" />
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
-                <g id="SVGRepo_iconCarrier">
-                    <path
-                        d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
-                        fill="#ffffff" />
-                </g>
-            </svg>
-        </div>
-
-        <div class="next-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" fill="none">
-                <path
-                    d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z"
-                    fill="#ffffff" />
-            </svg>
-        </div>
-
-        <div class="slider-controls"
-            style="display: none; align-items: center; justify-content: center; width:fit-content ;">
-            <div style="display: flex; align-items: center; justify-content: center; z-index: 9999 !important;">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="17px" height="17px" id="slider-dot"
-                    viewBox="0 0 32 32">
-                    <path
-                        d="M 16 4 C 9.382813 4 4 9.382813 4 16 C 4 22.617188 9.382813 28 16 28 C 22.617188 28 28 22.617188 28 16 C 28 9.382813 22.617188 4 16 4 Z M 16 6 C 21.535156 6 26 10.464844 26 16 C 26 21.535156 21.535156 26 16 26 C 10.464844 26 6 21.535156 6 16 C 6 10.464844 10.464844 6 16 6 Z M 16 13 C 14.34375 13 13 14.34375 13 16 C 13 17.65625 14.34375 19 16 19 C 17.65625 19 19 17.65625 19 16 C 19 14.34375 17.65625 13 16 13 Z" />
-                </svg>
-            </div>
-        </div>
-
-    </main>
-
-    <style>
-        .ffrWebAdvertising1920x1080webAdsSlider,
-        .ffrWebAdvertising1280x720webAdsSlider {
-            width: 100%;
-            height: auto;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .billboard-1280x720-webAdsSlider,
-        .billboard-1920x1080-webAdsSlider {
-            max-width: 100%;
-            margin: 0 auto;
-        }
-
-        .billboard-1280x720-webAdsSlider {
-            max-height: 720px;
-        }
-
-        .billboard-1920x1080-webAdsSlider {
-            max-height: 1080px;
-        }
-    </style>
-
-
-    <style>
-   .billboard-970x250{
-       width: 970px;
-       height: auto;
-       margin: 60px auto 30px auto;
-       display: block;
-       background-color: #e2e2e2;
-   }
-   .billboard-300x250{
-       width: 300px;
-       height: auto;
-       margin: 30px auto 30px auto;
-       display: block;
-       background-color: #e2e2e2;
-   }
-   .billboard-728x90{
-       width: 728px;
-       height: auto;
-       margin: 30px auto 30px auto;
-       display: block;
-       background-color: #e2e2e2;
-   }
-
-   .billboard-320x150{
-       width: 320px;
-       height: auto;
-       margin: 30px auto 30px auto;
-       display: block;
-       background-color: #e2e2e2;
-   }
-</style>
-
-    <div style="width: 100%; height: auto;">
-        <div class="billboard-1280x720-webAdsSlider">
-            <div class="ffrWebAdvertising300x250Mobile"></div>
-        </div>
-        <div class="billboard-1280x720-webAdsSlider">
-            <div class="ffrWebAdvertising1280x720webAdsSlider"></div>
-        </div>
-        <div class="billboard-1920x1080-webAdsSlider">
-            <div class="ffrWebAdvertising1920x1080webAdsSlider" id='videoCarousel'></div>
-        </div>
-        <div class="billboard-1920x1080-webAdsSlider">
-         <div class="ffrWifi1920x1200"></div>
-        </div>
-        <div class="billboard-1920x1080-webAdsSlider">
-        <div class="ffrWifi600x900"></div>
-        </div>
-    </div>
-
-    <div class="billboard-728x90 banner-desktop">
-        <div class="ffrWebAdvertising728x90Desktop" id='videoCarousel'></div>
-    </div>
-    <div class="billboard-300x250 banner-desktop">
-        <div class="ffrWebAdvertising300x250Desktop" id='videoCarousel'></div>
-    </div>
-    <div class="billboard-320x150 banner-mobile">
-       <div class="ffrLeadCollectionAds300x250Mobile"></div>
-    </div>
 
     <div class="billboard-970x250 banner-desktop">
-        <div class="ffrWebAdvertising970x250Desktop" id='videoCarousel'></div>
+        <div class="ffrWebAdvertising1280x720webAdsSlider"></div>
     </div>
+    <p style="text-align: center;">billboard-970x250</p>
+
 
     <div class="billboard-320x150 banner-mobile">
-        <div class="ffrLeadCollectionAds320x100Mobile"></div>
+        <div class="ffrWebAdvertising1920x1080webAdsSlider"></div>
     </div>
-    
-    <footer class="footer" role="contentinfo" style=" padding : 0px !important; margin-top: 400px;">
+    <p style="text-align: center;">billboard-320x150</p>
+
+
+    <main role="main">
+        <div class="top_content">
+            <div class="container image_top">
+                <div class="col-md-12 slider-bl">
+                    <div class="slider owl-carousel fxPressAway owl-loaded owl-drag">
+                        <div class="slider-container">
+                        </div>
+                        <div class="ffrWebAdvertising1920x1080Slider"></div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+
+    <footer class="footer" role="contentinfo" style="position: relative">
         <div class="container">
             <div class="col-md-12" style="position: static">
                 <div class="row">
                     <a id="back2Top" title="Back to top" href="#" style="display: none"><img
-                            src="https://media.istockphoto.com/id/1056915250/photo/gold-lotus-flower-background-3d-render-illustration.jpg?s=2048x2048&w=is&k=20&c=SAcjXqNy1PnWaE6OBwfBg1SISSbEZ4a2K6NKqWwGHH4=" /></a>
+                            src="https://dambovitamall.ro/wp-content/themes/dambovita/img/icon-top.png" /></a>
                     <div class="col-md-12 social">
                         <div id="g1-social-icons-1"
                             class="g1-social-icons g1-social-icons--list-horizontal g1-social-icons--32 g1-social-icons--icon">
@@ -274,7 +181,7 @@
                                     <a href="#" class="g1-new-window" target="_blank"><span
                                             class="g1-social-icon g1-social-icon--facebook">
                                             <img width="26" height="26" alt="facebook"
-                                                src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" /></span><strong></strong></a><i
+                                                src="https://dambovitamall.ro/wp-content/themes/dambovita/img/facebook.png" /></span><strong></strong></a><i
                                         class="g1-meta"></i>
                                 </li>
 
@@ -282,7 +189,7 @@
                                     <a href="#" class="g1-new-window" target="_blank"><span
                                             class="g1-social-icon g1-social-icon--facebook">
                                             <img width="26" height="26" alt="facebook"
-                                                src="https://freelogopng.com/images/all_img/1658586823instagram-logo-transparent.png" /></span><strong></strong></a><i
+                                                src="https://dambovitamall.ro/wp-content/themes/dambovita/img/instagram.png" /></span><strong></strong></a><i
                                         class="g1-meta"></i>
                                 </li>
                             </ul>
@@ -326,13 +233,21 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div class="col-md-12 social-second">
+                        <a href="#" target="_blank"><img
+                                src="https://dambovitamall.ro/wp-content/themes/dambovita/img/facebook.png" /></a>
+                        <a href="#" target="_blank"><img
+                                src="https://dambovitamall.ro/wp-content/themes/dambovita/img/instagram.png" /></a>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <img class="footer_logo"
+                            src="https://dambovitamall.ro/wp-content/themes/dambovita/img/footer_logo.png" />
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-
-<!--        <script id="ffr_ads"  src="https://ta.ffr.cloud/web-advertisement/645360216e2d050f28142e5a/web_advertising_desktop/script.js?uid=185eb0eaac23435ce3c614c0d497d4f59eb482ecc05a80e20255271aa81ed6ac"></script> -->
-
 </body>
 
 </html>
