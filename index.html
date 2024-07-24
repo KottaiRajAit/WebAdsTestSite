@@ -15,9 +15,12 @@
 <!--     <script src="https://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js"></script>
  -->
 <script src="./ffr-track.js"></script>
-     <script>
-        function getUID() {
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        function getUIDFromStorageOrCookie() {
+            // Try to get UID from localStorage
             let uid = localStorage.getItem('ochnuid');
+            // If not found in localStorage, try to get from cookies
             if (!uid) {
                 const cookieMatch = document.cookie.split('; ').find(row => row.startsWith('ochnuid='));
                 if (cookieMatch) {
@@ -27,13 +30,19 @@
             return uid;
         }
 
-        const uid = getUID();
+        function loadExternalScript(uid) {
+            const scriptURL = `https://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js?uid=${uid}`;
+            const scriptElement = document.createElement('script');
+            scriptElement.src = scriptURL;
+            document.head.appendChild(scriptElement);
+        }
 
-        const script = document.createElement('script');
-        script.src = `https://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js?uid=${uid}`;
-        document.head.appendChild(script);
-         
-    </script> 
+        const uid = getUIDFromStorageOrCookie();
+        if (uid) {
+            loadExternalScript(uid);
+        }
+    });
+</script>
   
 
     
