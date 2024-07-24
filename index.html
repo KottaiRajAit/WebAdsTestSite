@@ -17,9 +17,12 @@
 
      <script>
         function getUID() {
-            let uid = localStorage.getItem('uid');
+            let uid = localStorage.getItem('ochnuid');
             if (!uid) {
-                uid = document.cookie.split('; ').find(row => row.startsWith('uid=')).split('=')[1];
+                const cookieMatch = document.cookie.split('; ').find(row => row.startsWith('ochnuid='));
+                if (cookieMatch) {
+                    uid = cookieMatch.split('=')[1];
+                }
             }
             return uid;
         }
