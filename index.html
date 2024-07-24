@@ -7,13 +7,38 @@
     <link rel="stylesheet" type="text/css" href="https://dambovitamall.ro/wp-content/themes/dambovita/style.css" />
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
     <link rel="canonical" href="https://dambovitamall.ro/" />
-
-    <script src="https://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js"></script>
-
-    <style type="text/css"></style>
+      <style type="text/css"></style>
     <link rel="stylesheet" id="bcc_bootstrap-css"
         href="https://dambovitamall.ro/wp-content/plugins/bootstraps-columns-controller/css/bootstrap.min.css?ver=6.3.2"
         media="all" />
+
+<!--     <script src="https://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js"></script>
+ -->
+
+     <script>
+        function getUID() {
+            let uid = localStorage.getItem('uid');
+            if (!uid) {
+                uid = document.cookie.split('; ').find(row => row.startsWith('uid=')).split('=')[1];
+            }
+            return uid;
+        }
+
+        const uid = getUID();
+
+        window.addEventListener('load', function() {
+            const script = document.createElement('script');
+            script.src = "https://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js";
+            script.onload = function() {
+                // Assuming the script has a function to accept uid
+                if (typeof initializeWithUID === 'function') {
+                    initializeWithUID(uid);
+                }
+            };
+            document.head.appendChild(script);
+        });
+    </script>
+  
 
     <script src="./ffr-track.js"></script>
 
