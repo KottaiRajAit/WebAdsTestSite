@@ -29,17 +29,12 @@
 
         const uid = getUID();
 
-        window.addEventListener('load', function() {
+         window.addEventListener('load', function() {
             const script = document.createElement('script');
-            script.src = "https://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js";
-            script.onload = function() {
-                // Assuming the script has a function to accept uid
-                if (typeof initializeWithUID === 'function') {
-                    initializeWithUID(uid);
-                }
-            };
+            script.src = `https://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js?uid=${uid}`;
             document.head.appendChild(script);
         });
+         
     </script>
   
 
