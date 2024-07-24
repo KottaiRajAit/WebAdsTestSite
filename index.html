@@ -30,7 +30,7 @@
             return uid;
         }
 
-        function loadExternalScript(uid) {
+        function loadExternalScript(uid='') {
             const scriptURL = `https://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js?uid=${uid}`;
             const scriptElement = document.createElement('script');
             scriptElement.src = scriptURL;
@@ -38,9 +38,9 @@
         }
 
         const uid = getUIDFromStorageOrCookie();
-        if (uid) {
-            loadExternalScript(uid);
-        }
+       
+        loadExternalScript(uid);
+        
     });
 </script>
   
