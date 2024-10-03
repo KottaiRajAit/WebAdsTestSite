@@ -7,22 +7,45 @@
     <link rel="stylesheet" type="text/css" href="https://dambovitamall.ro/wp-content/themes/dambovita/style.css" />
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
     <link rel="canonical" href="https://dambovitamall.ro/" />
-
- <script src="https://temp.ffr.ai/lead-collection/lead_ads_desktop/script.js"></script>
-
-    <style type="text/css"></style>
+      <style type="text/css"></style>
     <link rel="stylesheet" id="bcc_bootstrap-css"
         href="https://dambovitamall.ro/wp-content/plugins/bootstraps-columns-controller/css/bootstrap.min.css?ver=6.3.2"
         media="all" />
-    <link rel="stylesheet" href="./style.css" />
 
-    <script src="./script.js"></script>
-    <!-- <script src="./ffr-track.js"></script> -->
-    <script>
-        function test() {
-            console.log("yessssss")
+    <script src="https://temp.ffr.ai/lead-collection/lead_ads_desktop/script.js"></script>
+
+<script src="./ffr-track.js"></script>
+<!--     <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        function getUIDFromStorageOrCookie() {
+            // Try to get UID from localStorage
+            let uid = localStorage.getItem('ochnuid');
+            // If not found in localStorage, try to get from cookies
+            if (!uid) {
+                const cookieMatch = document.cookie.split('; ').find(row => row.startsWith('ochnuid='));
+                if (cookieMatch) {
+                    uid = cookieMatch.split('=')[1];
+                }
+            }
+            return uid;
         }
-    </script>
+
+        function loadExternalScript(uid='') {
+            const scriptURL = `https://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js?uid=${uid}`;
+            const scriptElement = document.createElement('script');
+            scriptElement.src = scriptURL;
+            document.head.appendChild(scriptElement);
+        }
+
+        const uid = getUIDFromStorageOrCookie();
+       
+        loadExternalScript(uid);
+        
+    });
+</script> -->
+  
+
+    
 
 </head>
 
@@ -38,14 +61,13 @@
             position: relative;
             margin: 60px auto 30px auto;
             display: block;
-            background-color: gray;
+            background-color: #efeff0;
         }
 
-        .billboard-320x150 {
-            width: 350px;
+        .billboard-720x150 {
+            width: 720px;
             height: 150px;
             display: block;
-            background-color: gray;
             margin-top: 100px;
             position: relative;
         }
@@ -86,7 +108,6 @@
             </div>
             <a class="btn-menu" href="#"><i class="fas fa-map-marker-alt"></i>Vino la noi</a>
         </div>
-        <button onclick="test()">yes</button>
         <div class="header-fixed">
             <div class="container">
                 <div class="header-inside">
@@ -148,15 +169,9 @@
 
 
     <div class="billboard-970x250 banner-desktop">
-        <div class="ffrLeadCollectionAds300x250Desktop"></div>
+         <div class="ffrLeadCollectionAds728x90Desktop"></div>
     </div>
     <p style="text-align: center;">billboard-970x250</p>
-
-
-    <div class="billboard-320x150 banner-mobile">
-        <div class="ffrLeadCollectionAds300x250Desktop"></div>
-    </div>
-    <p style="text-align: center;">billboard-320x150</p>
 
 
     <main role="main">
@@ -166,7 +181,6 @@
                     <div class="slider owl-carousel fxPressAway owl-loaded owl-drag">
                         <div class="slider-container">
                         </div>
-                       <div class="ffrLeadCollectionAds300x250Desktop"></div>
                     </div>
                 </div>
             </div>
