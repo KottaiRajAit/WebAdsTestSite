@@ -11,10 +11,7 @@
     <link rel="stylesheet" id="bcc_bootstrap-css"
         href="https://dambovitamall.ro/wp-content/plugins/bootstraps-columns-controller/css/bootstrap.min.css?ver=6.3.2"
         media="all" />
-
-  <script src="https://temp.ffr.ai/web-advertisement/5cf92039bc790a5cf99e3540/web_advertising_desktop/script.js"></script>
-  <script src="https://temp.ffr.ai/web-advertisement/5cf92039bc790a5cf99e3540/web_advertising_mobile/script.js"></script>
-  <script src="https://temp.ffr.ai/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js"></script>
+    <script src="http://temp.ffr.cloud/web-advertising-slider/5cf92039bc790a5cf99e3540/web_advertising_slider/script.js"></script>
 
 <script src="./ffr-track.js"></script>
 <!--     <script>
@@ -59,6 +56,22 @@
     <style>
         .billboard-970x250 {
             width: 1200px;
+            height: 480px;
+            position: relative;
+            margin: 60px auto 30px auto;
+            display: block;
+            background-color: #efeff0;
+        }
+        .billboard-1280x720 {
+            width: 1280px;
+            height: 720px;
+            position: relative;
+            margin: 60px auto 30px auto;
+            display: block;
+            background-color: #efeff0;
+        }
+        .billboard-640x480 {
+            width: 640px;
             height: 480px;
             position: relative;
             margin: 60px auto 30px auto;
@@ -176,8 +189,12 @@
             </div>
         </div>
     </header>
-   <div class="billboard-970x250 banner-desktop">
+   <div class="billboard-1280x720 banner-desktop">
         <div class="ffrWebAdvertising1280x720webAdsSlider"></div>
+   </div>
+
+    <div class="billboard-640x480 banner-desktop">
+        <div class="ffrWebAdvertising640x480webAdsSlider"></div>
    </div>
 
     <div class="billboard-970x250 banner-desktop">
