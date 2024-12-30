@@ -14,9 +14,9 @@ var enableLogging = true;
 
     js = d.createElement(s); js.id = id; js.async = !0;
 
-    // js.src = "https://staging.footprintsforretail.com/jsapi/omnichannel.js";
+    js.src = "https://staging.footprintsforretail.com/jsapi/omnichannel.js";
 
-    js.src = "http://localhost:3000/jsapi/omnichannel.js";
+    // js.src = "http://localhost:3000/jsapi/omnichannel.js";
 
     ojs.parentNode.insertBefore(js, ojs);
 
